@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>ECOTECH</title>
+
+    <!-- Fontes e Ícones -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        body {
+            background: url('https://aterraambiental.com/wp-content/uploads/2023/01/certificacao-ambiental.png') no-repeat center center fixed;
+            background-size: cover;
+            color: #fff;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        nav {
+            background: rgba(0, 0, 0, 0.5);
+            padding: 15px 20px;
+            border-radius: 10px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.7);
+            margin-bottom: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        nav .logo {
+            width: 80px;
+            height: auto;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-grow: 1;
+            margin-left: 20px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.2em;
+            padding: 10px 20px;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            background-color: rgba(255, 255, 255, 0.2);
+            color: #ffeb3b;
+        }
+
+        h1 {
+            font-size: 3em;
+            color: #ffeb3b;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+            margin-bottom: 30px;
+            text-align: center;
+            font-family: 'Raleway', sans-serif;
+        }
+
+        .slider {
+            width: 100%;
+            max-width: 900px;
+            margin: 0 auto;
+            position: relative;
+            overflow: hidden;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+        }
+
+        .slides {
+            display: flex;
+            transition: transform 0.5s ease-in-out;
+        }
+
+        .slide-content {
+            width: 100%;
+            flex-shrink: 0;
+            text-align: center;
+            background: rgba(255, 255, 255, 0.3);
+            border-radius: 15px;
+            padding: 20px;
+            position: relative;
+        }
+
+        .slide-content img {
+            width: 100%;
+            height: 250px; /* Ajustado para um tamanho mais adequado */
+            object-fit: contain; /* Garantir que a imagem se ajuste sem ser cortada */
+            border-radius: 10px;
+            margin-bottom: 10px;
+        }
+
+        .slide-content p {
+            font-size: 1.2em;
+            color: #fff;
+            margin-top: 5px;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        .navigation {
+            position: absolute;
+            top: 50%;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            transform: translateY(-50%);
+        }
+
+        .prev, .next {
+            background-color: rgba(0, 0, 0, 0.5);
+            color: white;
+            padding: 15px;
+            cursor: pointer;
+            border: none;
+            font-size: 24px;
+            border-radius: 50%;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .prev:hover, .next:hover {
+            background-color: rgba(0, 0, 0, 0.7);
+        }
+
+        .content-section {
+            padding: 40px 20px;
+            background: rgba(255, 255, 255, 0.3);
+            color: #fff;
+            margin: 30px 0;
+            border-radius: 10px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            text-align: center;
+        }
+
+        .content-section h2 {
+            font-size: 2em;
+            margin-bottom: 20px;
+            color: #ffeb3b;
+        }
+
+        .content-section p {
+            font-size: 1.2em;
+            margin-bottom: 20px;
+        }
+
+        footer {
+            margin-top: auto;
+            background: rgba(0, 0, 0, 0.5);
+            padding: 20px;
+            text-align: center;
+            color: #fff;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+        }
+
+        footer i {
+            color: #ffeb3b;
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <img src="https://imgur.com/oyLMxA1.png" alt="Logo ECOTECH" class="logo">
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#tutorial">Tutorial</a></li>
+            <li><a href="https://www.instagram.com/eco_techsilvamello/" target="_blank">Instagram</a></li>
+            <li><a href="#sobre">Sobre</a></li>
+        </ul>
+    </nav>
+
+    <header>
+        <h1>ECOTECH</h1>
+    </header>
+
+    <div class="slider">
+        <div class="slides">
+            <div class="slide-content">
+                <img src="https://hccenergiasolar.com.br/wp-content/uploads/2022/05/hccengenhariaeletrica_hccengenharia_image_706.jpeg" alt="Tecnologia Sustentável">
+                <p>A ECOTECH é uma iniciativa focada em unir tecnologia e sustentabilidade. Nosso objetivo é desenvolver soluções que aproveitem o potencial da automação para reduzir desperdícios e preservar recursos naturais.</p>
+            </div>
+            <div class="slide-content">
+                <img src="https://blog.saravati.com.br/wp-content/uploads/2024/04/Guia-de-Montagem-Automatizando-a-vida-das-plantas-com-Projeto-de-Irrigacao-Automatica.webp" alt="Energia Renovável">
+                <p>Com o uso de fontes de energia renováveis, buscamos minimizar o impacto ambiental. Nosso sistema inteligente integra sensores e tecnologia de ponta para promover eficiência energética em diversas aplicações.</p>
+            </div>
+            <div class="slide-content">
+                <img src="https://blog.eletrogate.com/wp-content/uploads/2017/08/SensorDeSolo_bb-1024x733.jpg" alt="Inovações Verdes">
+                <p>O Arduino está no coração do nosso projeto. Ele é responsável por monitorar e controlar o sistema de irrigação, garantindo que as plantas recebam a quantidade ideal de água e cuidados, mesmo quando você está longe.</p>
+            </div>
+            <div class="slide-content">
+                <img src="https://sentrybrasil.com.br/cursos/wp-content/uploads/2017/02/emix-protecao-ambiente-1200x565.jpg" alt="Arduino e Automação">
+                <p>Nossos projetos são guiados pela inovação ecológica. Além da automação, estamos explorando formas criativas de reciclar e reutilizar materiais, tornando o futuro mais sustentável.</p>
+            </div>
+            <div class="slide-content">
+                <img src="https://images.ctfassets.net/1p6jth4lndy5/2d0j2s3VUu9s5JcTt2YkjK/845dd994f2884b07a1404cf85cb2b1ec/AdobeStock_616200906_Preview.jpeg?w=1140&fm=jpg&q=85" alt="Reciclagem e Reuso">
+                <p>Sustentabilidade vai além da tecnologia: promovemos o uso consciente de recursos, com foco em soluções que ajudem a preservar o meio ambiente e a promover um futuro mais verde e responsável.</p>
+            </div>
+        </div>
+        <div class="navigation">
+            <button class="prev" onclick="moveSlide(-1)"><i class="fas fa-chevron-left"></i></button>
+            <button class="next" onclick="moveSlide(1)"><i class="fas fa-chevron-right"></i></button>
+        </div>
+    </div>
+
+    <section id="tutorial" class="content-section">
+        <h2>Como Funciona</h2>
+        <p>O projeto ECOTECH é composto por sensores e sistemas automatizados que monitoram as condições de suas plantas. Quando conectados ao Arduino, esses dispositivos permitem que a irrigação seja feita de forma eficiente e sem desperdício, ajustando a quantidade de água de acordo com a necessidade do ambiente e das plantas.</p>
+        <p>Além disso, com o uso de fontes de energia renováveis, nossa solução se torna ainda mais sustentável e eficiente, utilizando a tecnologia para minimizar impactos ambientais.</p>
+    </section>
+
+    <footer>
+        <p>Feito com <i class="fas fa-heart"></i> pelo 3IPI3!</p>
+        <div>
+            <a href="https://www.instagram.com/eco_techsilvamello/" target="_blank">
+                <i class="fab fa-instagram"></i> Instagram
+            </a>
+        </div>
+    </footer>
+
+    <script>
+        let currentIndex = 0;
+        const slides = document.querySelector('.slides');
+        const totalSlides = slides.children.length;
+
+        // Função para mover os slides
+        function moveSlide(direction) {
+            currentIndex = (currentIndex + direction + totalSlides) % totalSlides;
+            slides.style.transform = `translateX(-${currentIndex * 100}%)`;
+        }
+    </script>
+
+</body>
+</html>
